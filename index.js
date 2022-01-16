@@ -6,11 +6,11 @@ const {
   Markup
 } = require('telegraf')
 // Подключить текстовые константы
-const CONST = require('./modules/const')
+// const CONST = require('./modules/const')
 // Подключить текст для бесплатных курсов
-const free_course = require('./modules/free_course')
+// const free_course = require('./modules/free_course')
 // Подключить текст для платных курсов
-const paid_course = require('./modules/paid_course')
+// const paid_course = require('./modules/paid_course')
 // Передать токен
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
@@ -26,7 +26,7 @@ bot.help(async (ctx) => {
   try {
     await ctx.replyWithHTML(CONST.COMMANDS, Markup.inlineKeyboard(
       [
-        Markup.button.url('Обзор бота', 'https://youtu.be/IZj7up7CDdU'),
+        Markup.button.url('Обзор бота бля', 'https://youtu.be/IZj7up7CDdU'),
         Markup.button.url('Как создать бота', 'https://youtu.be/YxHWfDdjIek'),
       ]
     ))
